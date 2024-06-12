@@ -1,0 +1,9 @@
+.box {
+    width: 100vh;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
